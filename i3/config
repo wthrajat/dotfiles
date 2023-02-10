@@ -48,7 +48,6 @@ workspace_layout default
 
 #border indicator on windows:
 new_window pixel 1
-
 # thin borders
 # hide_edge_borders both
 
@@ -198,8 +197,8 @@ bindsym F1 exec ~/.config/i3/scripts/keyhint-2
 # bindsym $mod+F1 exec xed ~/.config/i3/keybindings
 
 # Backlight control
-bindsym XF86MonBrightnessUp exec xbacklight +2 && notify-send "Brightness - $(xbacklight -get | cut -d '.' -f 1)%"
-bindsym XF86MonBrightnessDown exec xbacklight -2 && notify-send "Brightness - $(xbacklight -get | cut -d '.' -f 1)%"
+bindsym XF86MonBrightnessUp exec xbacklight +1 && notify-send "Brightness - $(xbacklight -get | cut -d '.' -f 1)%"
+bindsym XF86MonBrightnessDown exec xbacklight -1 && notify-send "Brightness - $(xbacklight -get | cut -d '.' -f 1)%"
 
 # change focus
 bindsym $mod+j focus left
@@ -434,7 +433,7 @@ for_window [class="Pamac-manager"] floating enable
 for_window [window_role="About"] floating enable
 
 # set border of floating window
-for_window [class="urxvt"] border pixel 1
+for_window [class="urxvt"] border pixel 0.1
 
 # set size of floating window
 #for_window [window_role="(?i)GtkFileChooserDialog"] resize set 640 480 #to set size of file choose dialog
@@ -448,7 +447,7 @@ for_window [class="urxvt"] border pixel 1
 ######################################
 
 # Define colors variables:
-set $darkbluetrans	#08052be6
+set $darkbluetrans	#08052b
 set $darkblue		#08052b
 set $lightblue		#5294e2
 set $urgentred		#e53935
@@ -462,7 +461,7 @@ set $yellowbrown	#e1b700
 
 # define colors for windows:
 #class		        	border		bground		text		indicator	child_border
-client.focused		    	$lightblue	$darkblue	$white		$mediumgrey	$mediumgrey
+client.focused		    	#00FFFF	#00FFFF	$white		#00FFFF	#04dede
 client.unfocused	    	$darkblue	$darkblue	$grey		$darkgrey	$darkgrey
 client.focused_inactive		$darkblue	$darkblue	$grey		$black		$black
 client.urgent		    	$urgentred	$urgentred	$white		$yellowbrown	$yellowbrown
@@ -479,9 +478,9 @@ client.urgent		    	$urgentred	$urgentred	$white		$yellowbrown	$yellowbrown
 exec_always /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
 exec_always --no-startup-id picom -CGb
-exec_always --no-startup-id bash ~/.config/polybar/launch.sh --material
-exec_always feh --bg-scale ~/Downloads/yn.jpg 
-
+exec_always --no-startup-id bash ~/.config/polybar/launch.sh --colorblocks
+exec_always feh --bg-scale ~/Downloads/neon.jpg
+exec_always --no-startup-id nm-applet --sm-disable
 
 
 
@@ -510,3 +509,9 @@ bindsym $mod+t exec rofi -show window \
 #exec --no-startup-id greenclip daemon>/dev/null
 #bindsym $mod+c exec --no-startup-id rofi -modi "clipboard:greenclip print" -show clipboard \
 #		-config ~/.config/rofi/rofidmenu.rasi
+
+# Activate smart borders (always)
+smart_borders on
+
+
+
