@@ -51,10 +51,6 @@ new_window pixel 1
 # thin borders
 # hide_edge_borders both
 
-# Set inner/outer gaps
-gaps inner 6
-gaps outer 3
-
 # show window title bars (not officially supported with i3gaps)
 #default_border normal
 
@@ -522,9 +518,3 @@ for_window [class=".*"] border pixel 0
 gaps outer 15
 gaps inner 30
 gaps bottom 35
-
-
-
-
-
-
