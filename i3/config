@@ -515,6 +515,6 @@ for_window [class=".*"] border pixel 0
 
 # Gaps trying:
 
-gaps outer 15
-gaps inner 20
-gaps bottom 10
+gaps outer 10
+gaps inner 8
+gaps bottom 8
