@@ -517,4 +517,4 @@ for_window [class=".*"] border pixel 0
 
 gaps outer 10
 gaps inner 20
-gaps bottom 8
+gaps bottom 10
