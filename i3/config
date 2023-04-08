@@ -476,7 +476,7 @@ exec_always /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec_always --no-startup-id picom -CGb
 exec_always --no-startup-id bash ~/.config/polybar/launch.sh --colorblocks
 exec_always feh --bg-scale ~/Downloads/aurora.jpg
-exec_always --no-startup-id nm-applet --sm-disable
+#exec_always --no-startup-id nm-applet --sm-disablei
 
 
 
