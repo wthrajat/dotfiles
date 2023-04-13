@@ -1,0 +1,18 @@
+2023/04/13-14:55:11.119 12d9 Reusing MANIFEST /home/rajat/.config/Element/IndexedDB/vector_vector_0.indexeddb.leveldb/MANIFEST-000001
+2023/04/13-14:55:11.119 12d9 Recovering log #404
+2023/04/13-14:55:11.139 12d9 Reusing old log /home/rajat/.config/Element/IndexedDB/vector_vector_0.indexeddb.leveldb/000404.log 
+2023/04/13-23:03:05.469 5f03 Level-0 table #412: started
+2023/04/13-23:03:05.481 5f03 Level-0 table #412: 1153649 bytes OK
+2023/04/13-23:03:05.484 5f03 Delete type=0 #404
+2023/04/13-23:08:32.157 5f03 Compacting 1@1 + 4@2 files
+2023/04/13-23:08:32.298 5f03 Generated table #413@1: 5352 keys, 2131376 bytes
+2023/04/13-23:08:32.419 5f03 Generated table #414@1: 4973 keys, 2128288 bytes
+2023/04/13-23:08:32.540 5f03 Generated table #415@1: 5473 keys, 2130311 bytes
+2023/04/13-23:08:32.703 5f03 Generated table #416@1: 39708 keys, 1716775 bytes
+2023/04/13-23:08:32.703 5f03 Compacted 1@1 + 4@2 files => 8106750 bytes
+2023/04/13-23:08:32.705 5f03 compacted to: files[ 0 0 4 0 0 0 0 ]
+2023/04/13-23:08:32.705 5f03 Delete type=2 #412
+2023/04/13-23:08:32.705 5f03 Delete type=2 #406
+2023/04/13-23:08:32.705 5f03 Delete type=2 #409
+2023/04/13-23:08:32.705 5f03 Delete type=2 #407
+2023/04/13-23:08:32.705 5f03 Delete type=2 #408
